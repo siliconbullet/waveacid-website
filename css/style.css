@@ -1,0 +1,15 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+A {text-decoration: none;}
+
+/* unvisited link */
+a:link { color: red; }
+
+/* visited link */
+a:visited { color: green; }
+
+/* mouse over link */
+a:hover { color: hotpink; }
+
+/* selected link */
+a:active { color: blue; }
