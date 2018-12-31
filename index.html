@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WaveAcid Handheld Biosynthesizer</title>
+<title>WaveAcid Handheld Synthesizer</title>
 <style type="text/css"> 
   .mobileShow {display: none;} 
   .mobileShowAndPortrait {display: none;} 
@@ -54,7 +54,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta property="og:image:width" content="243">
 <meta property="og:image:height" content="243">
-<meta property="og:description" content="Handheld, portable, pharmaceutical synthesis for everybody.">
+<meta property="og:description" content="Handheld, portable, genotyping for everybody.">
 <meta property="og:title" content="WaveAcid Biomedical Synthesizer">
 <meta property="og:url" content="https://www.waveacid.com">
 <meta property="og:image" content="https://www.waveacid.com/og-image.jpg">
@@ -83,8 +83,8 @@
 <div class="mobileShowAndPortrait" style="margin-top: 30%"><br><br><br><br><br><br><br><br><br><br></div>
 
 <small style="padding: 0">Our flagship product:</small>
-<h1 style="margin: 0; padding: 0">Handheld pharmaceutics synthesis<span style="font-family: Arial">&#8482;</span></h1>
-<h2 style="margin: 0; margin-bottom: 10px; padding: 0">Print your medicine at home.<span style="font-family: Arial">&#8482;</span></h2>
+<h1 style="margin: 0; padding: 0">Handheld Pharmaceutics Synthesis<span style="font-family: Arial">&#8482;</span></h1>
+<h2 style="margin: 0; margin-bottom: 10px; padding: 0">Print your medicine at home..<span style="font-family: Arial">&#8482;</span></h2>
 </div>
 <img class="anim_1" style="display: none" src="synth.png" />
 <div style="border: 1px" class="anim_1">
@@ -98,7 +98,7 @@
 <div id="anim_1" style="">
 <h2 style="padding:0;margin:0">Technology</h2>
 <ul style="text-align: center; width: 40%; float: left; text-align: left">
-<li>About ~100 Double-Precision TFLOPS from NVIDIA CUDA cores calculate synthesis routes from chemical elements, over inorganic compounds to biochemical precursors</li>
+	<li><br>About ~100 Double-Precision TFLOPS from NVIDIA CUDA cores calculate synthesis routes from chemical elements, over inorganic compounds to biochemical precursors</li>
 <li>Miniaturized ICP-AES, NMR, IR-Spectrometry lead stereoismerically verified pharmaceutical compounds without trace metals</li>
 <li>Miniaturized Inductively coupled plasma mass spectrometry (ICP-AES) for saftey of human consumption</li>
 <li>390-1700nm Infrared Spectrometry for molecule differentiation and identification</li>
@@ -106,6 +106,7 @@
 <li>Microfluidic Reductive Amination</li>
 <li>Liquid Heating through Laser Light; Helium-Neon Chain Reaction</li>
 <li>Electrolysis Chamber</li>
+	<li><img width="412" height="600" src="device.jpg" /><br></li>
 <li>Mechcanical Multi-Thread Tank for Parallel Thermo-Isolated Chemical Reactions</li>
 <li>Real-Time NMR and IR analysis; Gas Chromatography</li>
 <li>Indepdenent, co-processor controlled, liquid cooling system</li>
@@ -125,9 +126,7 @@
 </a></li>
 <li><a href="http://science.sciencemag.org/content/344/6186/885">Real-space imaging of molecular structure and chemical bonding by single-molecule inelastic tunneling probe</a></li>
 <li><br></li>
-<li>We are providing hard-/software security audits &amp; reverse engineering, alongisde NodeJS development services. To those who still use Python or PHP in the web, we offer a transition phase.</li>
-<li><br></li>
-<li>We offer cryptographic consulting and corporate consulting services, especially in regards to employee selection and information security.</li>
+<li><img width="412" height="300" src="sensor.jpg" /></li>
 </ul>
 <div style="clear: both"></div>
 </div>
@@ -138,7 +137,9 @@
 <section id="investors" style="display: none; padding: 0; margin-top: 6vw; text-align: center">
 <h2 style="">Investors</h2>
 <ul style="text-align: center; width: 45%; float: left; text-align: left">
-WaveAcid Inc. is an American C-Corporation and holds 30,000,000 shares. Those are issued as <i>Molecoins</i>, a digital currency and stock format. The publicly circulating supply is 14,700,000.<br>
+WaveAcid Inc. is an American C-Corporation and holds 30,000,000 shares. Those are issued as <i>Molecoins</i>, a stablecoin, digital currency and stock distribution format. The publicly circulating supply is 14,700,000.<br>
+<br>The current price of 1 Molecoin is at $USD 420 and has not changed. The minimum possible investment is x500 Molecoins.
+<br>
 <br>
 <a href="bitcoin:39EnmD16hPTwc6WVxwYWYYkvyB6odtXLrb?amount=3"><img src="bitcoin.png"></a>
 <a href="litecoin:MSMiP2k8JrSRAyv2CZvTVvrVRCfaJEmxTQ?amount=400"><img src="litecoin.png" height="64" width="180"></a>
@@ -219,20 +220,34 @@ var technology = $("#technology").html();
 var investors = $("#investors").html();
 
 if (window.current == "home") {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     showHome();
 } else if (window.current == "technology") {
+    $("body").css("background", "#fff");
+    $("body").css("color", "#a9a9a9");
     showTechnology();
 } else if (window.current == "investors") {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     showInvestors();
 } else if (window.current == "contact") {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     showContact();
 } else if (window.current == "faq") { 
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     showFaq();
 } else {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     showHome();
 }
 
 function showHome() {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     document.location.href = "#";
     $(window).scroll(function(){});
     $("#home").fadeIn();
@@ -246,6 +261,8 @@ function showHome() {
 }
 
 function showFaq() {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     document.location.href = "#faq";
     //$(window).scroll(function(){});
     $("#home").fadeOut();
@@ -260,20 +277,23 @@ function showFaq() {
 }
 
 function showTechnology() {
+    $("body").css("background", "#fff");
+    $("body").css("color", "#a2a2a2");
     document.location.href = "#technology";
-    $(window).scroll(function(){});
     $("#home").fadeOut();
     $("#investors").fadeOut();
     $("#contact").fadeOut();
     $("#faq").fadeOut();
     $("#technology").fadeIn();
     $("#footer").fadeIn();
-    $([document.documentElement, document.body]).animate({
+    /*$([document.documentElement, document.body]).animate({
         scrollTop: $("#technology_anchor").offset().top
-    }, 2000);
+    }, 2000);*/
 }
 
     function showInvestors() {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     document.location.href = "#investors";
     $(window).scroll(function(){});
     $("#technology").fadeOut();
@@ -282,22 +302,25 @@ function showTechnology() {
     $("#faq").fadeOut();
     $("#investors").fadeIn();
     //$("#footer").fadeIn();
+	   /*
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#investors_anchor").offset().top
-    }, 2000);
+    }, 2000);*/
 }
 
 function showContact() {
+    $("body").css("background", "#000");
+    $("body").css("color", "#fff");
     document.location.href = "#contact";
     $(window).scroll(function(){});
     $("#technology").fadeOut();
     $("#contact").fadeIn();
     $("#faq").fadeOut();
     $("#investors").fadeOut();
-    $("#home").fadeOut();
+    $("#home").fadeOut();/*
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#contact_anchor").offset().top
-    }, 2000);
+    }, 2000);*/
 }
 
 function add_line(line) {
